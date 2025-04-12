@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour agency</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div>
+      <header
+        class="relative bg-[#161525] py-[19px] px-[38px] border-t-[2px] border-t-[#FF4D48]"
+      >
+        <div class="container mx-auto h-full">
+          <div class="grid grid-cols-12 h-full">
+            <div class="col-span-6 lg:col-span-2">
+              <a
+                href=""
+                class="flex items-center gap-2 h-full text-white text-[18px] lg:text-[26px] font-semibold"
+              >
+                <img src="/assets/image/logo.png" alt="" />
+                Tour Agency
+              </a>
+            </div>
+            <nav class="col-span-9 hidden lg:block">
+              <ul class="flex justify-around h-full items-center">
+                <li>
+                  <a
+                    href="./index.html"
+                    class="nav_link uppercase text-[#FF4D48] font-medium text-[14px]"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Về chúng tôi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./room.html"
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Danh sách phòng</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./order.html"
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Đặt chỗ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./discover.html"
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Khám phá</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Liên lạc</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="col-span-1 hidden lg:block">
+              <a
+                href=""
+                class="text-white flex items-center gap-2 bg-[#FF4D48] h-[30px] text-[14px] font-bold py-[4px] px-[2px] rounded-[4px] h-full hover:bg-[#EE4843]"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 14 14"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect width="14" height="14" fill="url(#pattern0_95_397)" />
+                  <defs>
+                    <pattern
+                      id="pattern0_95_397"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_95_397"
+                        transform="scale(0.0104167)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_95_397"
+                      width="96"
+                      height="96"
+                      preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </defs>
+                </svg>
+                Đăng nhập
+              </a>
+            </div>
+            <div class="btn_menu col-span-6 flex justify-end block lg:hidden">
+              <svg
+                class="w-[30px] flex items-center"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="#fff"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Mobile tablet -->
+        <div
+          class="menu absolute top-[72px] w-[200px] left-[-1px] bg-[#161525] z-100"
+        >
+          <ul class="">
+            <li class="px-[16px] py-[8px]">
+              <a
+                href=""
+                class="uppercase text-[#FF4D48] font-medium text-[14px]"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Về chúng tôi</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Danh sách phòng</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Đặt chỗ</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Khám phá</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Liên lạc</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a
+                href=""
+                class="text-white block flex items-center gap-2 bg-[#FF4D48] w-[123px] h-[30px] text-[14px] font-bold rounded-[4px] h-full hover:bg-[#EE4843]"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 14 14"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect width="14" height="14" fill="url(#pattern0_95_397)" />
+                  <defs>
+                    <pattern
+                      id="pattern0_95_397"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_95_397"
+                        transform="scale(0.0104167)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_95_397"
+                      width="96"
+                      height="96"
+                      preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </defs>
+                </svg>
+                Đăng nhập
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="relative h-[446px]">
+        <div class="relative w-full h-full overflow-hidden">
+          <!-- Slide 1 -->
+          <div
+            class="slide absolute inset-0 opacity-100 z-10 transition-opacity duration-700 active"
+          >
+            <div class="absolute top-0 left-0 w-full h-full z-0">
+              <div class="absolute inset-0 bg-black/70"></div>
+              <img
+                src="./assets/image/order.png"
+                alt="menu"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center px-4"
+        >
+          <!-- Tiêu đề lớn -->
+          <h1 class="text-[36px] font-bold text-white mb-2">Đặt chỗ</h1>
+          <!-- Breadcrumb -->
+          <p class="text-[16px] font-medium mb-4">
+            Trang chủ /
+            <span class="text-[#FF4D48]">Đặt chỗ</span>
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="mx-auto px-[10px] md:px-[30px] lg:px-[30px] py-6 bg-[#F1F1F1]"
+      >
+        <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-6">
+          <!-- Form khách hàng -->
+          <div class="col-span-12 md:col-span-9">
+            <div
+              class="bg-white h-[700px] shadow-md p-6 pb-[300px] pt-[16px] pl-[20px] pr-[26px]"
+            >
+              <h2 class="text-[20px] text-[#000] font-bold mb-6">
+                Thông tin khách hàng
+              </h2>
+              <form>
+                <!-- Họ và Tên -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label class="block text-[16px] mb-1 text-[#000]">Họ</label>
+                    <input
+                      type="text"
+                      placeholder="Nhập họ..."
+                      class="w-full bg-[#EDEDED] px-3 py-2 rounded outline-none text-sm text-[#A8A6A6]"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-[16px] mb-1 text-[#000]"
+                      >Tên</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="Nhập tên..."
+                      class="w-full bg-[#EDEDED] px-3 py-2 rounded outline-none text-sm text-[#A8A6A6]"
+                    />
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                  <label class="block text-[16px] mb-1 text-[#000]"
+                    >Địa chỉ email:</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Nhập địa chỉ email..."
+                    class="w-full bg-[#EDEDED] px-3 py-2 rounded outline-none text-sm text-[#A8A6A6]"
+                  />
+                </div>
+
+                <!-- Số điện thoại -->
+                <div>
+                  <label class="block text-[16px] mb-1 text-[#000]"
+                    >Số điện thoại:</label
+                  >
+                  <input
+                    type="tel"
+                    placeholder="Nhập số điện thoại..."
+                    class="bg-[#EDEDED] px-3 py-2 rounded outline-none text-sm text-[#A8A6A6]"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Cột tìm kiếm -->
+          <div class="col-span-12 md:col-span-3">
+            <div class="relative bg-[#fff] border border-[#FF4D48]">
+              <input
+                type="text"
+                placeholder="Tìm kiếm"
+                class="w-full text-[#A8A6A6] px-4 py-2 border border-gray-300 focus:outline-none"
+              />
+              <span class="absolute top-2.5 right-3 text-gray-500"
+                ><svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect width="19" height="19" fill="url(#pattern0_46_31)" />
+                  <defs>
+                    <pattern
+                      id="pattern0_46_31"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_46_31"
+                        transform="scale(0.0104167)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_46_31"
+                      width="96"
+                      height="96"
+                      preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </defs>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-[#242424] text-white">
+        <div class="max-w-screen-xl mx-auto px-4 py-6 sm:py-8">
+          <!-- Tiêu đề -->
+          <div class="flex items-center gap-2 mb-4">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="40" height="40" fill="url(#pattern0_24_19)" />
+              <defs>
+                <pattern
+                  id="pattern0_24_19"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use xlink:href="#image0_24_19" transform="scale(0.01)" />
+                </pattern>
+                <image
+                  id="image0_24_19"
+                  width="100"
+                  height="100"
+                  preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAJnUlEQVR4Xu2dXXIUNxDHNbsU8BZzgpgTxJwg64cEVyoO9glinwA4QeAEgRPgnCB2nEqZ5IHlBJATZHOC8IgTdpWWNB6vd2em/5JaM9qq2SoKkp3RavqnVn+opSnU8MlKAkVWvRk6owYgmQ2CAcgAJDMJZNadQUMGIJlJILPuDBoyAAmXgD6YbKlPd3dUoXfKVj53fxdb9i+t/nb/qWb075n99y01K04v3L834JOthlTCV2qiRvoRCXi7EnyQYPWp0sWfdOu0+PViGtREBzdlBcRCmN89IA14HA+Ak14J6JY6yUmDsgCiv92bEIRHJMKjOC3gIDR9b+G8zEFzegWiv/lqR41H3xOEJ6GiFL7PTGU/FecXJ8Ltws31AsRNTXd+6E8jGPkU+r3VmB7AdAokexDrnKZq/PGwOJ1+gId45IWdAdH7e2QflNEK8pY26aMJhj4uzn8/7aLXyYFca0U2diJQrvpFcf76aeDN8G1JgZQwXpHRPoB7lPOFxrZ8WhwXv/3xPlU3kwGxHtSt0SsyjldRdapn6L5drXZTuchJgJRxxc/9xBQoH4o9VGGMtbFt/p9EUMSB6P2HJqYg413ml/wftZs7tHpOo/yZGzyKptUAZyMBFFEgm6EZFW/ynK4DQDeQiscBYG60EzuaxIDog71tNdfvsteMSmKLwzpXtgTzo6dgxaCIALHe1OLOm40y4OOP95oCvqDnmc8fSHhfMkD2HxoDvkGuLR9TBECZ0RR431Oz1i6PBkJ24xkZRROBb8pnRumQB2g6hDIMb+jBJtjD6VMKHg+xa+uvigISON/G9DfyXkqD6OLQN4YgKMYLA93jetuEdjwYSLmYREY8wF1Eeyd73VTN509D53kafGTokfQPQR8XpIFhy8bhQDZiqjKJwYLSHPpMjS9pZTAuawtrCqVYil9ePwgZT0FAyhzVXz26uDMa7fxcffs/KnCIg7AqVP3dw3egNxnkCocB6V87RDyakBHsMRiD+ugNJJMAMOhhQwDU3aP3vyYXf0SuPvfxN/D+QLw8Dq7Dwd/3CsT0mow8H3sF2BIvIGUizvjlfX/6B2JTRYrsKPPxjOD9gCCjguugzPe9A3FagsQnfsEiDMTDmMmIvL2VPIC4wr5/2Aceq/toXIIDcUUKJmLN4ZMFEFxLFOwCewABjFhXqAKMZaqulRkLRkvwaQsCktl0ZWbv6CSeJCA+Aak/UNLxHvKbGBDY70Z+UuIaf/9e4leb2ihrztqnc9COYED6j8yXZMGvZaQUfl3b4LT1lLTkBdc3DEh6d3dK0xBXrkmbcIoz39R5owDV3S3173xLjcZus0/kxh4bKBYtmW9N+1KAQjsQyJ4JgLZb6M6Y77mBAXshXEONAMzOq2rzD1srdqLU4qyr8tHlPrNAXO6KjUiPaYR/ga0X1Io0CZByF9YTuwEouCxJv6DU/XPprHHTwOKBuLql9nRJWZ+EL+KsdUccSJkANNUjbZrtoXDd2C4eiKtXai+LWfIgAqGIASkNrOnvkYe0sUtNbe/ocjeltggAWfexA6CIAOmmuJucj/liN3QpmCPPA+Fd3to0hieUaCCdr/F7ZnE5EFff80C4xf2WNIYHlCgg3WjGqkhNMcMlJQ1ll4gBIGyKmfzri92mEQBCiQPCDRp0ePpelyCnlhyIeUYQSos4mnNX+HJq1fyU9sC/VYv5qbo9pmD0I/2hIHG+oDilII+sMNuzJzCbsooevp65EADC1iNBqfA4KPVAPMs9ZzQ0XiLlQH6bjeLqsFb58EBYo45nMsOhNABBXHL3xLSbltYkPIvXPPp7QtM2BcfxHwEgpOTnF2w7V131eMilp2sCwqZ0qHNxsQO2TEtdBbO5HDJWkFhqubm0v64D/lDWgbhTIMamlLXN9kSVdV4PIqjgOsoxufotAAhQgxTgk/tBqQGCTFdCBhfL58ksmvFAkIX8wL12OJRaIExdlGycwNdh4ba0TadZIOZm6gytGbdt4gxPvGFQ6oCw9kPM0DoZAEUeLbuyONsBT1m2M2yBcdzo4KHUaggzSPBKD0RY0LQVMHV7u72lhvB7IyK9jHYoN4FAwlGy6+7QMm3g1L0MBZyyAMOuNLRm3OoTNaZAVoEABWoCo3W1rzRtaUaboj0tDAhi2IVKc+o1JQCIwGhdFn5XWgkBQe2IVPbT7l3US05EsXi/ur4NOBrRGnsDCBL3CGglDgTxMoT8fsjI8o6GaDEdtME10o6a58aBYNOWSGQMAWFLk+I8vxr70b49WigVDwMpfXFke7Co/98EB4oLhDQWS/GHx2LeXlaV00HmUXOxgOpyWgK5oab4LnL9G07xCzkRXhpSxiT8Vi5FhxMLpaPb3WQ2Wje3e53ccNOzsqenAifiyeSxvGxIpSVY4Zw5hz3ZqWtVX9Ai8ICj+fzW6eWCUG8NwW2J7Epaoy1hva2lO0Gb4nmoGbRiyk3BV9+HAYE8LvsTop2teyhsXWTtzhP6P2/tGxSoyNoWXY+LbaVHO+7gf7b2d5myqHsdBMRqCbu0W/W5tSoFHTmMLUG8P4mfamgjPm0UpSEWiNMS8PAZuQ43Tl1sXJKQh21a5hmDNcTZEiTpWAkiOvHWqiVZnGoXDyUKiIPCFtJdyxE0qjFjmV/Zi2kduTcOSjSQEkqnp65xYuEXvLgWYr8PhyIDxMue0MNGluYg4vJ0Xbkmp/bMLW5bxo1WwqCIAHFGHtpptdxle+ZVqrL+qx8KfytDefjZ0il0/i62PxQxIBYKsttqbSyaLWP08hTPqkJuSK9+Xx7ybOp3qXbXvOWtrmijhGBqfxveTZUaiigQZ0+AHVe10pTJlvqAslptgsKy6BrdWpASijiQcE3pxj32AdbqZqOZ76oRbPpKAsRCcR02p65thwnBvL2Apg6BwyvDfp+/K4WmJAPiDL2N5g2UCf94rVdMqTXzoq4z2tfxQSU43DK0f9JQkgK59nTYPSah8pjRjfTHLtfyp5SG/gpznz+U5iK+ToDEGXtMij5bIrAW/a7ygEILZrRW1OBVdgYktbb0DWTJbrZtkWiFYdroHIizLTaILF8s6TcSm67OAQgDhYXRG5BKW5wnZt5qcxSLJRcgDVAgGL0DqcC4CJ/eiRsOJicgK1BgGNkAWdYOG+kbOF7LqH77HGO1Eb3fGnrKAvikhXqxIfAD2QWw4ksCNOEA5aYh6DOuXpc1kNXOOmeANvibYgSr3/ozlyTUW33GIaHCr7tvo4BIPniubQ1AMiMzABmAZCaBzLozaMgAJDMJZNadQUMGIJlJILPu/A9/QTawGkugpAAAAABJRU5ErkJggg=="
+                />
+              </defs>
+            </svg>
+
+            <h2 class="text-[32px] font-semibold">Tour Agency</h2>
+          </div>
+
+          <div class="space-y-1 text-sm sm:text-base">
+            <p class="flex items-center gap-2 text-[16px]">
+              <svg
+                class="w-4 h-4 text-red-400 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 0C6.686 0 4 2.686 4 6c0 4.414 6 14 6 14s6-9.586 6-14c0-3.314-2.686-6-6-6zM10 8.25c-1.242 0-2.25-1.008-2.25-2.25S8.758 3.75 10 3.75s2.25 1.008 2.25 2.25S11.242 8.25 10 8.25z"
+                />
+              </svg>
+              Linh Nam, Hoàng Mai, Hà Nội
+            </p>
+
+            <p class="flex items-center gap-2 text-[16px]">
+              <svg
+                class="w-4 h-4 text-red-400 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2.003 5.884l3.476-.29a1 1 0 01.949.684l1.1 3.28a1 1 0 01-.261 1.08l-1.85 1.85a10.464 10.464 0 004.15 4.15l1.85-1.85a1 1 0 011.08-.261l3.28 1.1a1 1 0 01.684.949l-.29 3.476A1.5 1.5 0 0113.485 20C6.039 20 0 13.961 0 6.516 0 5.383.89 4.439 2.003 5.884z"
+                />
+              </svg>
+              0777962671 | 0964618437
+            </p>
+
+            <p class="flex items-center gap-2 text-[16px]">
+              <svg
+                class="w-4 h-4 text-red-400 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2.94 6.56C2.95 4.86 4.33 3.5 6 3.5h8c1.67 0 3.06 1.36 3.06 3.06v.24l-7 3.5-7-3.5v-.24zM2 14.5V7.92l6.65 3.33c.23.12.49.18.75.18s.52-.06.75-.18L17 7.92v6.58c0 1.07-.93 1.94-2 1.94H4c-1.07 0-2-.87-2-1.94z"
+                />
+              </svg>
+              nhahalong96@gmail.com
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div
+        id="overlay"
+        class="fixed inset-0 z-50 hidden"
+        style="background-color: rgba(0, 0, 0, 0.5)"
+      ></div>
+    </div>
+    <script src="/js/ToggleMenu.js"></script>
+
+    <script src="/js/HandleNavLink.js"></script>
+  </body>
+</html>

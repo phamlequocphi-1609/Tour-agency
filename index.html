@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour agency</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div>
+      <header
+        class="relative bg-[#161525] py-[19px] px-[38px] border-t-[2px] border-t-[#FF4D48]"
+      >
+        <div class="container mx-auto h-full">
+          <div class="grid grid-cols-12 h-full">
+            <div class="col-span-6 lg:col-span-2">
+              <a
+                href=""
+                class="flex items-center gap-2 h-full text-white text-[18px] lg:text-[26px] font-semibold"
+              >
+                <img src="/assets/image/logo.png" alt="" />
+                Tour Agency
+              </a>
+            </div>
+            <nav class="col-span-9 hidden lg:block">
+              <ul class="flex justify-around h-full items-center">
+                <li>
+                  <a
+                    href="./index.html"
+                    class="nav_link uppercase text-[#FF4D48] font-medium text-[14px]"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Về chúng tôi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./room.html"
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Danh sách phòng</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./order.html"
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Đặt chỗ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./discover.html"
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Khám phá</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="nav_link text-white uppercase font-medium text-[14px]"
+                    >Liên lạc</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="col-span-1 hidden lg:block">
+              <a
+                href=""
+                class="text-white flex items-center gap-2 bg-[#FF4D48] h-[30px] text-[14px] font-bold py-[4px] px-[2px] rounded-[4px] h-full hover:bg-[#EE4843]"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 14 14"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect width="14" height="14" fill="url(#pattern0_95_397)" />
+                  <defs>
+                    <pattern
+                      id="pattern0_95_397"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_95_397"
+                        transform="scale(0.0104167)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_95_397"
+                      width="96"
+                      height="96"
+                      preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </defs>
+                </svg>
+                Đăng nhập
+              </a>
+            </div>
+            <div class="btn_menu col-span-6 flex justify-end block lg:hidden">
+              <svg
+                class="w-[30px] flex items-center"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="#fff"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Mobile tablet -->
+        <div
+          class="menu absolute top-[72px] w-[200px] left-[-1px] bg-[#161525] z-100"
+        >
+          <ul class="">
+            <li class="px-[16px] py-[8px]">
+              <a
+                href=""
+                class="uppercase text-[#FF4D48] font-medium text-[14px]"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Về chúng tôi</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Danh sách phòng</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Đặt chỗ</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Khám phá</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a href="" class="text-white uppercase font-medium text-[14px]"
+                >Liên lạc</a
+              >
+            </li>
+            <li class="px-[16px] py-[8px]">
+              <a
+                href=""
+                class="text-white block flex items-center gap-2 bg-[#FF4D48] w-[123px] h-[30px] text-[14px] font-bold rounded-[4px] h-full hover:bg-[#EE4843]"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 14 14"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect width="14" height="14" fill="url(#pattern0_95_397)" />
+                  <defs>
+                    <pattern
+                      id="pattern0_95_397"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_95_397"
+                        transform="scale(0.0104167)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_95_397"
+                      width="96"
+                      height="96"
+                      preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,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"
+                    />
+                  </defs>
+                </svg>
+                Đăng nhập
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="banner__home relative h-[446px]">
+        <div class="slider-wrapper relative w-full h-full overflow-hidden">
+          <!-- Slide 1 -->
+          <div
+            class="slide absolute inset-0 opacity-100 z-10 transition-opacity duration-700 active"
+          >
+            <div class="absolute top-0 left-0 w-full h-full z-0">
+              <div class="absolute inset-0 bg-black/50"></div>
+              <img
+                src="./assets/image/banner__halong.png"
+                alt="Vịnh Hạ Long"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+
+            <div
+              class="absolute top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center text-white p-[44px] md:p-[85px] lg:px-4 text-center"
+            >
+              <h1 class="text-[20px] md:text-4xl lg:text-[44px] font-bold mb-4">
+                Khám phá Hạ Long - Kỳ quan thiên nhiên của Việt Nam
+              </h1>
+              <p
+                class="text-[14px] md:text-lg lg:text-lg mb-6 font-medium max-w-3xl"
+              >
+                Hạ Long được UNESCO công nhận là Di sản Thiên nhiên Thế giới với
+                hàng nghìn đảo đá vôi kỳ vĩ nổi bật giữa làn xanh nước ngắt. Nơi
+                đây không chỉ là thiên đường du lịch với cảnh sắc hữu tình mà
+                còn lưu giữ nhiều giá trị lịch sử, văn hóa độc đáo.
+              </p>
+              <button
+                class="bg-white text-[15px] border border-[#FF4D48] text-[#FF4D48] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition mb-8 cursor-pointer"
+              >
+                Đặt chỗ ngay
+              </button>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="slide absolute inset-0 opacity-0 z-0 transition-opacity duration-700"
+          >
+            <div class="absolute inset-0 z-0">
+              <div class="absolute inset-0 bg-black/50"></div>
+              <img
+                src="/assets/image/banner__halong.png"
+                alt="Bãi Cháy"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+
+            <div
+              class="absolute top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center text-white p-[44px] md:p-[85px] lg:px-4 text-center"
+            >
+              <h1 class="text-[20px] md:text-4xl lg:text-[44px] font-bold mb-4">
+                Du thuyền sang trọng giữa vịnh
+              </h1>
+              <p
+                class="text-[14px] md:text-lg lg:text-lg mb-6 font-medium max-w-3xl"
+              >
+                Trải nghiệm cảnh đẹp hùng vĩ của Hạ Long từ du thuyền cao cấp.
+              </p>
+              <button
+                class="bg-white text-[15px] border border-[#FF4D48] text-[#FF4D48] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition mb-8 cursor-pointer"
+              >
+                Xem tour
+              </button>
+            </div>
+          </div>
+          <div
+            class="slide absolute inset-0 opacity-0 z-0 transition-opacity duration-700"
+          >
+            <div class="absolute inset-0 z-0">
+              <div class="absolute inset-0 bg-black/50"></div>
+              <img
+                src="/assets/image/banner__halong.png"
+                alt="Bãi Cháy"
+                class="object-cover object-center w-full h-full"
+              />
+            </div>
+
+            <div
+              class="absolute top-0 left-0 w-full h-full z-10 flex flex-col items-center justify-center text-white p-[44px] md:p-[85px] lg:px-4 text-center"
+            >
+              <h1 class="text-[20px] md:text-4xl lg:text-[44px] font-bold mb-4">
+                Du thuyền sang trọng giữa vịnh
+              </h1>
+              <p
+                class="text-[14px] md:text-lg lg:text-lg mb-6 font-medium max-w-3xl"
+              >
+                Trải nghiệm cảnh đẹp hùng vĩ của Hạ Long từ du thuyền cao cấp.
+              </p>
+              <button
+                class="bg-white text-[15px] border border-[#FF4D48] text-[#FF4D48] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition mb-8 cursor-pointer"
+              >
+                Xem tour
+              </button>
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div
+            class="absolute inset-0 flex items-center justify-between px-[4px] lg:px-4 z-20"
+          >
+            <button id="prevBtn" class="cursor-pointer transition">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="32" height="32" fill="url(#pattern0_95_414)" />
+                <defs>
+                  <pattern
+                    id="pattern0_95_414"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use xlink:href="#image0_95_414" transform="scale(0.02)" />
+                  </pattern>
+                  <image
+                    id="image0_95_414"
+                    width="50"
+                    height="50"
+                    preserveAspectRatio="none"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABTklEQVRoQ+3ZLRKDMBAFYCIqKnovDK6D5xStxLWmsseohTNwE0QdiIqIEmZgym8I2TL7MmAQQCbfroC3CM+RQzji8HYIt06SdyRJkktZls8wDMstsaQQhRBC3BWgKIrTlhgyyC+i6USWZYc4juUWnSGBjCHU5qvunH3ff0FAOCDqotlUiwvCCsIJsRrCDbEKwhFhDOGKMIJwRiyGcEcsgiAgtBAUxCwECTEJQUOMQhARAwgqogNBRrQQdEQNcQFRQ9I0vVXnaz+XbJnubDJR82wdrFzAtAkRHdOJusiYQWZHxYwOHxAxk1MUNMzsOAgJo51roWC0EJT3zCIIAmYxhDvGCMIZYwzhilkF4YhZDeGGsYJwwlhDuGBIIFOYPM+PURR9KBKgbg0ySB8D+3u6qZj6NpNSPoIgeOuqSHmdtCOUGzNda4eYVuzf9zvTkS9h0eQzJDkIEwAAAABJRU5ErkJggg=="
+                  />
+                </defs>
+              </svg>
+            </button>
+            <button id="nextBtn" class="transition cursor-pointer">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="32" height="32" fill="url(#pattern0_95_415)" />
+                <defs>
+                  <pattern
+                    id="pattern0_95_415"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use xlink:href="#image0_95_415" transform="scale(0.02)" />
+                  </pattern>
+                  <image
+                    id="image0_95_415"
+                    width="50"
+                    height="50"
+                    preserveAspectRatio="none"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABTUlEQVRoQ+3ZvQ3CMBAFYFywASOwBSVdGhpGoGCMlGxAwQjUJCkoKZIhmIAVkMK5iISQKHI/705RUjsnf35pXpwWE3nSRByLGRItSVEidV1f+r4/FUXx9IaxIRlBmz9kAGHW3hgWpKqqc0rp+J2CN4YFoTSuhNj/fk6eGBYkA6Jh2JBoGBEkEkYMiYJRgUTAqEG8MaoQT4w6xAtjAvHAmEHQGFMIEmMOQWEgEAQGBrHGQCGWGDjECuMCscC4Qaguv6gur35bZtd1y7Is32N/ZrhAtBEZDYdYIOAQKwQUYomAQawREAgCYQ5BIUwhSIQZBI0wgXgg1CFeCFWIJ0IN4o1QgURAiCFRECJIJAQbEg0hgWyo3T2+Wxy32Y1tgv/Ws4sV3SFuaeg9D/ZGsBMZTqVpml3btjdOx9ZKYpjDTkR7I9J5M0R6gtrvTyaRD/EbUELECO7+AAAAAElFTkSuQmCC"
+                  />
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="absolute bottom-[80px] left-0 right-0 flex justify-center space-x-2 z-30"
+            id="dots"
+          >
+            <div
+              class="dot w-[33px] h-[3px] bg-[#FF4D48] rounded transition-all duration-300"
+            ></div>
+            <div
+              class="dot w-[33px] h-[3px] bg-[#FF4D48] opacity-[50%] rounded transition-all duration-300"
+            ></div>
+            <div
+              class="dot w-[33px] h-[3px] bg-[#FF4D48] opacity-[50%] rounded transition-all duration-300"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-[-192px] md:bottom-[-40px] left-0 right-0 px-4 z-20"
+        >
+          <form
+            class="max-w-5xl mx-auto bg-white rounded-[17px] shadow-lg pl-[26px] pt-[16px] pb-[17px] pr-[18px]"
+            onsubmit="event.preventDefault();"
+          >
+            <div class="flex flex-col md:flex-row gap-3">
+              <div class="flex-1">
+                <input
+                  type="text"
+                  placeholder="Đi từ..."
+                  class="w-full bg-gray-100 rounded-[15px] px-4 py-3 text-sm text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-400"
+                  required
+                />
+              </div>
+
+              <div class="flex-1">
+                <input
+                  type="text"
+                  placeholder="Đến..."
+                  class="w-full bg-gray-100 rounded-[15px] px-4 py-3 text-sm text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-400"
+                  required
+                />
+              </div>
+
+              <div class="flex-1 relative">
+                <input
+                  type="date"
+                  class="w-full bg-gray-100 rounded-[15px] px-4 py-3 text-sm text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-400"
+                  required
+                />
+              </div>
+
+              <div class="md:w-[200px] w-full">
+                <button
+                  type="submit"
+                  class="cursor-pointer bg-red-500 hover:bg-red-600 transition text-[14px] font-medium rounded-[15px] w-full h-full py-3 px-6"
+                >
+                  Tìm kiếm
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="about mt-[224px] md:mt-[97px]">
+        <div class="mx-auto grid grid-cols-2 gap-10">
+          <div class="col-span-2 lg:col-span-1 text-center lg:text-right">
+            <h3
+              class="text-[32px] md:text-[40px] text-black font-bold mb-[22px] leading-[20px]"
+            >
+              Về Hạ Long
+            </h3>
+            <div
+              class="text-black space-y-4 text-[18px] p-[30px] lg:pr-0 lg:pt-0 lg:pl-[47px]"
+            >
+              <p class="mb-[10px] leading-[38px]">
+                Hạ Long thuộc tỉnh Quảng Ninh, cách Hà Nội khoảng 180km, được
+                mệnh danh là thiên đường du lịch phía Bắc. Nhờ vị trí thuận lợi
+                cùng cơ sở hạ tầng hiện đại, hệ thống giao thông phát triển, mỗi
+                năm, Hạ Long thu hút hàng chục triệu lượt khách du lịch trong
+                nước và quốc tế.
+              </p>
+              <p class="leading-[38px]">
+                Vịnh Hạ Long có diện tích 1.553km² bao gồm 1.900 hòn đảo đá vôi
+                lớn nhỏ mang những hình thù hết sức sinh động. Vịnh đã nhiều lần
+                được UNESCO bình chọn là kỳ quan thiên nhiên thế giới, được mệnh
+                danh là địa điểm nhất định phải đến 1 lần trong đời.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-2 lg:col-span-1 w-full">
+            <img
+              src="/assets/image/Vinh-Ha-Long-1 1.png"
+              alt="Vịnh Hạ Long"
+              class="w-full rounded-[20px] shadow-md object-cover"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="mt-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2 class="text-[28px] md:text-[36px] font-bold text-[#FF4D48] mb-12">
+            Vì sao nên du lịch Hạ Long?
+          </h2>
+
+          <div class="space-y-8">
+            <!-- Box 1: ảnh trái -->
+            <div class="flex justify-start">
+              <div
+                class="max-w-[600px] relative bg-white shadow-md rounded-[20px] p-6 flex flex-col md:flex-row items-center gap-6"
+              >
+                <img
+                  src="/assets/image/kinh-nghiem-du-lich-ha-long-2_1674039281 1.png"
+                  alt="1 trong 7 kỳ quan"
+                  class="rounded-[12px] object-cover mb-4 md:mb-0 md:absolute md:right-[-84px] lg:right-[0px] lg:left-[-84px]"
+                />
+                <div class="text-left md:pr-[80px] lg:pr-0 lg:pl-[80px]">
+                  <h3
+                    class="text-[#000] font-semibold text-base md:text-lg mb-2"
+                  >
+                    1 trong 7 kỳ quan thiên nhiên thế giới
+                  </h3>
+                  <p class="text-sm text-gray-700">
+                    Nằm trong top 7 kỳ quan thiên nhiên thế giới, chắc chắn,
+                    vịnh Hạ Long là điểm đến mơ ước của mọi du khách. Không chỉ
+                    khách du lịch trong nước, du khách nước ngoài cũng rất thích
+                    thú, trầm trồ với tạo hóa thiên nhiên nơi đây.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Box 2: ảnh phải -->
+            <div class="flex justify-end">
+              <div
+                class="max-w-[600px] relative bg-white shadow-md rounded-[20px] p-6 flex flex-col md:flex-row-reverse items-center gap-6"
+              >
+                <img
+                  src="/assets/image/kinh-nghiem-du-lich-ha-long-2_1674039281 2.png"
+                  alt="Cơ sở vật chất"
+                  class="rounded-[12px] object-cover mb-4 md:mb-0 md:absolute md:left-[-84px] lg:right-[84px]"
+                />
+                <div class="text-left md:pl-[80px] lg:pr-0">
+                  <h3
+                    class="text-[#000] font-semibold text-base md:text-lg mb-2"
+                  >
+                    Có đầy đủ cơ sở vật chất và dịch vụ chất lượng
+                  </h3>
+                  <p class="text-sm text-gray-700">
+                    Những năm qua, Hạ Long có tốc độ phát triển kinh tế cực cao.
+                    Hệ thống cơ sở vật chất, hạ tầng được đầu tư đồng bộ và hiện
+                    đại. Du khách được phục vụ đầy đủ các dịch vụ tiện ích, đáp
+                    ứng nhu cầu vui chơi, nghỉ dưỡng, mua sắm…
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Box 3: ảnh trái -->
+            <div class="flex justify-start">
+              <div
+                class="max-w-[600px] relative bg-white shadow-md rounded-[20px] p-6 flex flex-col md:flex-row items-center gap-6"
+              >
+                <img
+                  src="/assets/image/kinh-nghiem-du-lich-ha-long-2_1674039281 3.png"
+                  alt="Điểm vui chơi"
+                  class="rounded-[12px] object-cover mb-4 md:mb-0 md:absolute md:right-[-84px] lg:right-[0px] lg:left-[-84px]"
+                />
+                <div class="text-left md:pr-[80px] lg:pr-0 lg:pl-[80px]">
+                  <h3
+                    class="text-[#000] font-semibold text-base md:text-lg mb-2"
+                  >
+                    Nhiều điểm vui chơi, giải trí, khám phá thú vị, hấp dẫn
+                  </h3>
+                  <p class="text-sm text-gray-700">
+                    Đến Hạ Long, bạn sẽ được thỏa sức khám phá thiên nhiên, trải
+                    nghiệm, vui chơi. Kinh nghiệm đi Hạ Long của nhiều người cho
+                    thấy: người ta không bỏ lỡ những địa điểm tham quan đặc sắc
+                    như vịnh Hạ Long, phố cổ đêm, Tuần Châu...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-[123px] px-[25px] md:px-[120px] lg:px-4 mb-[17px]">
+        <h2
+          class="text-[28px] md:text-[32px] font-bold text-[#000] mb-12 text-center"
+        >
+          Một số điểm đến nổi bật
+        </h2>
+
+        <!-- Wrapper cho items -->
+        <div
+          id="item-wrapper"
+          class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-[20px]"
+        >
+          <!-- Item 1 -->
+          <div class="item-box">
+            <div class="text-center bg-white shadow-md rounded-[34px] pb-6">
+              <img
+                src="/assets/image/vinh-bai-tu-long-vien-ngoc-tiem-nang-cua-du-lich-quang-ninhavartar-1723260653 1.png"
+                class="w-full rounded-tl-[34px] rounded-tr-[34px] h-[320px]"
+              />
+              <p class="text-[#000] text-[20px] font-bold mt-[10px] mb-[14px]">
+                Vịnh Bái Tử Long
+              </p>
+              <a href="" class="bg-[#FF4D48] w-[80px] p-[10px] rounded-[10px]"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="item-box">
+            <div class="text-center bg-white shadow-md rounded-[34px] pb-6">
+              <img
+                src="/assets/image/vinh-bai-tu-long-vien-ngoc-tiem-nang-cua-du-lich-quang-ninhavartar-1723260653 1 (1).png"
+                class="w-full rounded-tl-[34px] rounded-tr-[34px] h-[320px]"
+              />
+              <p class="text-[#000] text-[20px] font-bold mt-[10px] mb-[14px]">
+                Đảo Tuần Châu
+              </p>
+              <a href="" class="bg-[#FF4D48] w-[80px] p-[10px] rounded-[10px]"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="item-box">
+            <div class="text-center bg-white shadow-md rounded-[34px] pb-6">
+              <img
+                src="/assets/image/vinh-bai-tu-long-vien-ngoc-tiem-nang-cua-du-lich-quang-ninhavartar-1723260653 2.png"
+                class="w-full rounded-tl-[34px] rounded-tr-[34px] h-[320px]"
+              />
+              <p class="text-[#000] text-[20px] font-bold mt-[10px] mb-[14px]">
+                Vịnh Hạ Long
+              </p>
+              <a href="" class="bg-[#FF4D48] w-[80px] p-[10px] rounded-[10px]"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="item-box">
+            <div class="text-center bg-white shadow-md rounded-[34px] pb-6">
+              <img
+                src="/assets/image/vinh-bai-tu-long-vien-ngoc-tiem-nang-cua-du-lich-quang-ninhavartar-1723260653 1.png"
+                class="w-full rounded-tl-[34px] rounded-tr-[34px] h-[320px]"
+              />
+              <p class="text-[#000] text-[20px] font-bold mt-[10px] mb-[14px]">
+                Vịnh Bái Tử Long
+              </p>
+              <a href="" class="bg-[#FF4D48] w-[80px] p-[10px] rounded-[10px]"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-center items-center gap-2 mt-[25px]">
+          <button id="carousel-prevBtn">
+            <img
+              src="/assets/image/arrow_circle_left_80dp_FF4D48_FILL0_wght400_GRAD0_opsz48 1.png"
+              alt="prev"
+            />
+          </button>
+          <button id="carousel-nextBtn">
+            <img
+              src="/assets/image/arrow_circle_right_80dp_FF4D48_FILL0_wght400_GRAD0_opsz48 1.png"
+              alt="next"
+            />
+          </button>
+        </div>
+      </section>
+
+      <section class="mt-[123px] px-[25px] md:px-[120px] lg:px-4 mb-[17px]">
+        <h2
+          class="text-[28px] md:text-[32px] font-bold text-[#000] mb-12 text-center"
+        >
+          Nên thử món gì ở Hạ Long? Chúng tôi có một vài gợi ý
+        </h2>
+
+        <!-- Wrapper cho items -->
+        <div
+          id="item-wrapper1"
+          class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-[20px]"
+        >
+          <!-- Item 1 -->
+          <div class="item-box1">
+            <div class="text-center bg-white shadow-md rounded-[34px] pb-6">
+              <img
+                src="/assets/image/vinh-bai-tu-long-vien-ngoc-tiem-nang-cua-du-lich-quang-ninhavartar-1723260653 2 (1).png"
+                class="w-full rounded-tl-[34px] rounded-tr-[34px] h-[320px]"
+              />
+              <p class="text-[#000] text-[20px] font-bold mt-[10px] mb-[14px]">
+                Ngán biển
+              </p>
+              <a href="" class="bg-[#FF4D48] w-[80px] p-[10px] rounded-[10px]"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="item-box1">
+            <div class="text-center bg-white shadow-md rounded-[34px] pb-6">
+              <img
+                src="/assets/image/vinh-bai-tu-long-vien-ngoc-tiem-nang-cua-du-lich-quang-ninhavartar-1723260653 2 (2).png"
+                class="w-full rounded-tl-[34px] rounded-tr-[34px] h-[320px]"
+              />
+              <p class="text-[#000] text-[20px] font-bold mt-[10px] mb-[14px]">
+                Chả mực
+              </p>
+              <a href="" class="bg-[#FF4D48] w-[80px] p-[10px] rounded-[10px]"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="item-box1">
+            <div class="text-center bg-white shadow-md rounded-[34px] pb-6">
+              <img
+                src="/assets/image/vinh-bai-tu-long-vien-ngoc-tiem-nang-cua-du-lich-quang-ninhavartar-1723260653 1 (2).png"
+                class="w-full rounded-tl-[34px] rounded-tr-[34px] h-[320px]"
+              />
+              <p class="text-[#000] text-[20px] font-bold mt-[10px] mb-[14px]">
+                Bún bề bề
+              </p>
+              <a href="" class="bg-[#FF4D48] w-[80px] p-[10px] rounded-[10px]"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="item-box1">
+            <div class="text-center bg-white shadow-md rounded-[34px] pb-6">
+              <img
+                src="/assets/image/vinh-bai-tu-long-vien-ngoc-tiem-nang-cua-du-lich-quang-ninhavartar-1723260653 1.png"
+                class="w-full rounded-tl-[34px] rounded-tr-[34px] h-[320px]"
+              />
+              <p class="text-[#000] text-[20px] font-bold mt-[10px] mb-[14px]">
+                Vịnh Bái Tử Long
+              </p>
+              <a href="" class="bg-[#FF4D48] w-[80px] p-[10px] rounded-[10px]"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-center items-center gap-2 mt-[25px]">
+          <button id="carousel-prevBtn1">
+            <img
+              src="/assets/image/arrow_circle_left_80dp_FF4D48_FILL0_wght400_GRAD0_opsz48 1.png"
+              alt="prev"
+            />
+          </button>
+          <button id="carousel-nextBtn1">
+            <img
+              src="/assets/image/arrow_circle_right_80dp_FF4D48_FILL0_wght400_GRAD0_opsz48 1.png"
+              alt="next"
+            />
+          </button>
+        </div>
+      </section>
+
+      <section class="py-8">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Khối tiêu đề -->
+          <div class="text-center mb-8">
+            <!-- Dòng chữ Ưu đãi mới nhất -->
+            <div
+              class="inline-block bg-[#FF4D48] text-white text-sm font-medium p-[10px] rounded-[18px] uppercase"
+            >
+              Ưu đãi mới nhất
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-medium mt-4 text-[#000]">
+              CÁC TOUR PHỔ BIẾN
+            </h2>
+            <!-- Mô tả ngắn -->
+            <p class="mt-2 text-[#000] text-[16px]">
+              Tour, trải nghiệm và địa điểm. Tất cả trong một dịch vụ.
+            </p>
+          </div>
+
+          <!-- Khối danh sách các tour -->
+          <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Card 1 -->
+            <div
+              class="bg-white rounded-[20px] shadow hover:shadow-lg overflow-hidden cursor-pointer transition-all transform duration-300 hover:-translate-y-2 hover:shadow-lg"
+            >
+              <div class="relative">
+                <img
+                  src="/assets/image/duthuyen.png"
+                  alt="Tour du thuyền Athena"
+                  class="w-full h-48 object-cover"
+                />
+
+                <div
+                  class="absolute top-[12px] left-[13px] bg-[#FF4D48] text-white text-xs font-semibold px-2 py-1 rounded-full"
+                >
+                  Ưu đãi
+                </div>
+                <div
+                  class="text-[#000] absolute top-[46px] left-[13px] bg-[#000000] text-white text-xs font-semibold px-2 py-1 rounded-full"
+                >
+                  3,090,000 VNĐ
+                </div>
+              </div>
+
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#000]">
+                  Tour du thuyền Athena
+                </h3>
+                <div class="flex gap-2 mb-2">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      width="15.6427"
+                      height="15.6427"
+                      fill="url(#pattern0_95_467)"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0_95_467"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_95_467"
+                          transform="scale(0.0104167)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_95_467"
+                        width="96"
+                        height="96"
+                        preserveAspectRatio="none"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                  <span class="text-[#000]"
+                    >Hạ Long, hang Sửng Sốt, đảo Ti Tốp...</span
+                  >
+                </div>
+                <div class="ml-auto flex text-yellow-400 text-sm">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex items-center mt-2">
+                  <span class="text-[14px] text-[#000] font-medium"
+                    >2 ngày | 1 đêm</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[20px] shadow hover:shadow-lg overflow-hidden cursor-pointer transition-all transform duration-300 hover:-translate-y-2 hover:shadow-lg"
+            >
+              <div class="relative">
+                <img
+                  src="/assets/image/duthuyen1.png"
+                  alt="Tour du thuyền Athena"
+                  class="w-full h-48 object-cover"
+                />
+
+                <div
+                  class="absolute top-[12px] left-[13px] bg-[#FF4D48] text-white text-xs font-semibold px-2 py-1 rounded-full"
+                >
+                  Ưu đãi
+                </div>
+                <div
+                  class="text-[#000] absolute top-[46px] left-[13px] bg-[#000000] text-white text-xs font-semibold px-2 py-1 rounded-full"
+                >
+                  2,750,000 VND
+                </div>
+              </div>
+
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#000]">
+                  Tour du thuyền Aphrodite
+                </h3>
+                <div class="flex gap-2 mb-2">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      width="15.6427"
+                      height="15.6427"
+                      fill="url(#pattern0_95_467)"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0_95_467"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_95_467"
+                          transform="scale(0.0104167)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_95_467"
+                        width="96"
+                        height="96"
+                        preserveAspectRatio="none"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                  <span class="text-[#000]"
+                    >Hạ Long, hang Sửng Sốt, đảo Ti Tốp...</span
+                  >
+                </div>
+                <div class="ml-auto flex text-yellow-400 text-sm">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex items-center mt-2">
+                  <span class="text-[14px] text-[#000] font-medium"
+                    >2 ngày | 1 đêm</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[20px] shadow hover:shadow-lg overflow-hidden cursor-pointer transition-all transform duration-300 hover:-translate-y-2 hover:shadow-lg"
+            >
+              <div class="relative">
+                <img
+                  src="/assets/image/duthuyen2.png"
+                  alt="Tour du thuyền Athena"
+                  class="w-full h-48 object-cover"
+                />
+
+                <div
+                  class="absolute top-[12px] left-[13px] bg-[#FF4D48] text-white text-xs font-semibold px-2 py-1 rounded-full"
+                >
+                  Ưu đãi
+                </div>
+                <div
+                  class="text-[#000] absolute top-[46px] left-[13px] bg-[#000000] text-white text-xs font-semibold px-2 py-1 rounded-full"
+                >
+                  3,050,000 VND
+                </div>
+              </div>
+
+              <div class="p-4">
+                <h3 class="text-lg font-semibold text-[#000]">
+                  Tour du thuyền Athena Luxury
+                </h3>
+                <div class="flex gap-2 mb-2">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      width="15.6427"
+                      height="15.6427"
+                      fill="url(#pattern0_95_467)"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0_95_467"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_95_467"
+                          transform="scale(0.0104167)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_95_467"
+                        width="96"
+                        height="96"
+                        preserveAspectRatio="none"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                  <span class="text-[#000]"
+                    >Hạ Long, hang Sửng Sốt, đảo Ti Tốp...</span
+                  >
+                </div>
+                <div class="ml-auto flex text-yellow-400 text-sm">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.49 6.91l6.574-.955L10 .5l2.936 5.455 6.574.955-4.755 4.635 1.123 6.545z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex items-center mt-2">
+                  <span class="text-[14px] text-[#000] font-medium"
+                    >2 ngày | 1 đêm</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full overflow-hidden px-[4px] lg:px-8">
+        <div class="absolute inset-0">
+          <div class="absolute inset-0 bg-black/60"></div>
+          <img
+            src="/assets/image/sea.png"
+            alt="Sea Stars Cruise Background"
+            class="w-full h-full object-cover object-center"
+          />
+        </div>
+
+        <!-- Nội dung chính -->
+        <div class="relative z-10 px-4 py-[24px] sm:py-14 md:py-[24px]">
+          <!-- Khối text (bên trái) -->
+          <div class="text-white">
+            <p class="text-[#FF4D48] text-sm md:text-base font-medium">
+              Siêu du thuyền Hạ Long
+            </p>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mt-2">
+              SEA STARS CRUISE
+            </h2>
+
+            <!-- Thông tin địa điểm -->
+            <div
+              class="flex items-center mt-4 text-gray-200 text-sm sm:text-base"
+            >
+              <!-- Icon location (bạn có thể dùng Heroicons hoặc icon khác) -->
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="22" height="22" fill="url(#pattern0_114_7)" />
+                <defs>
+                  <pattern
+                    id="pattern0_114_7"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_114_7"
+                      transform="scale(0.0104167)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_114_7"
+                    width="96"
+                    height="96"
+                    preserveAspectRatio="none"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+
+              <span class="ml-2"> Hạ Long, hang Sửng Sốt, đảo Ti Tốp... </span>
+            </div>
+
+            <div class="flex justify-between flex-col md:flex-row">
+              <div>
+                <p class="mt-4 text-gray-100 mb-[4px]">Giá khuyến mãi:</p>
+                <div>
+                  <span
+                    class="block sm:inline-block text-red-400 font-bold text-xl sm:text-2xl"
+                  >
+                    5,150,000 VND/khách
+                  </span>
+                  <span class="block sm:inline-block text-[16px] sm:ml-2">
+                    2 ngày | 1 đêm
+                  </span>
+                </div>
+              </div>
+
+              <button
+                class="mt-6 bg-red-500 hover:bg-red-600 transition-colors duration-200 text-white font-semibold px-6 py-3 rounded-[20px] border border-[#fff] cursor-pointer"
+              >
+                Đặt tour ngay
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-[#242424] text-white">
+        <div class="max-w-screen-xl mx-auto px-4 py-6 sm:py-8">
+          <!-- Tiêu đề -->
+          <div class="flex items-center gap-2 mb-4">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="40" height="40" fill="url(#pattern0_24_19)" />
+              <defs>
+                <pattern
+                  id="pattern0_24_19"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use xlink:href="#image0_24_19" transform="scale(0.01)" />
+                </pattern>
+                <image
+                  id="image0_24_19"
+                  width="100"
+                  height="100"
+                  preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+
+            <h2 class="text-[32px] font-semibold">Tour Agency</h2>
+          </div>
+
+          <div class="space-y-1 text-sm sm:text-base">
+            <p class="flex items-center gap-2 text-[16px]">
+              <svg
+                class="w-4 h-4 text-red-400 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 0C6.686 0 4 2.686 4 6c0 4.414 6 14 6 14s6-9.586 6-14c0-3.314-2.686-6-6-6zM10 8.25c-1.242 0-2.25-1.008-2.25-2.25S8.758 3.75 10 3.75s2.25 1.008 2.25 2.25S11.242 8.25 10 8.25z"
+                />
+              </svg>
+              Linh Nam, Hoàng Mai, Hà Nội
+            </p>
+
+            <p class="flex items-center gap-2 text-[16px]">
+              <svg
+                class="w-4 h-4 text-red-400 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2.003 5.884l3.476-.29a1 1 0 01.949.684l1.1 3.28a1 1 0 01-.261 1.08l-1.85 1.85a10.464 10.464 0 004.15 4.15l1.85-1.85a1 1 0 011.08-.261l3.28 1.1a1 1 0 01.684.949l-.29 3.476A1.5 1.5 0 0113.485 20C6.039 20 0 13.961 0 6.516 0 5.383.89 4.439 2.003 5.884z"
+                />
+              </svg>
+              0777962671 | 0964618437
+            </p>
+
+            <p class="flex items-center gap-2 text-[16px]">
+              <svg
+                class="w-4 h-4 text-red-400 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2.94 6.56C2.95 4.86 4.33 3.5 6 3.5h8c1.67 0 3.06 1.36 3.06 3.06v.24l-7 3.5-7-3.5v-.24zM2 14.5V7.92l6.65 3.33c.23.12.49.18.75.18s.52-.06.75-.18L17 7.92v6.58c0 1.07-.93 1.94-2 1.94H4c-1.07 0-2-.87-2-1.94z"
+                />
+              </svg>
+              nhahalong96@gmail.com
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <div
+        id="overlay"
+        class="fixed inset-0 z-50 hidden"
+        style="background-color: rgba(0, 0, 0, 0.5)"
+      ></div>
+    </div>
+    <script src="/js/ToggleMenu.js"></script>
+    <script src="/js/HandleSliderBanner.js"></script>
+    <script src="/js/HandleNavLink.js"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 const currentPath = window.location.pathname.split('/').pop(); // Lấy tên file: index.html, order.html
 const links = document.querySelectorAll('.nav_link');
-
+console.log(links)
 links.forEach(link => {
     const linkPath = link.getAttribute('href').replace('./', '');
 
